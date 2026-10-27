@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body{
+            display: grid;
+            place-items: center ;
+            background-color: black;
+            text-align: center;
+        margin-top: 50px;
+        margin-left: 30%;
+        margin-right: 25%;
+        }
+    
+        legend{
+            display: grid;
+            place-items: center ;
+            text-align: center;
+            padding-top: 10px;            background-color:chocolate;
+            padding-bottom: 10px;            background-color:chocolate;
+            color: rgba(0, 0, 255, 0.644);
+            font-size: x-large;
+            width: 300px;
+            border-radius: 25px;
+        }
+        fieldset{
+            
+            text-align: center;
+            width: 500px;
+            color: aliceblue;
+            text-align: center;
+            padding: 50px;
+            background-color: black;
+            border-radius: 25px;
+            
+        }
+        div#divname{
+            margin-top: 30px;
+
+            background-color: chocolate;
+
+        }
+        div#divmail{
+            margin-top: 30px;
+            padding-left: 40px;
+            background-color: chocolate;
+        }
+        div#divpass{
+            margin-top: 30px;
+
+            padding-left: 12px;
+            background-color: chocolate;
+
+
+        }
+        div#divconpass{
+            padding-right: 20px;
+            margin-top: 30px;
+
+            background-color: chocolate;
+
+
+        }
+        input{
+            
+            border-radius: 25px;
+            padding: 5px;
+            width: auto;
+        }
+        div{
+            
+            border-radius: 25px;
+            padding: 10px;
+            color: aliceblue;
+        }
+        button{
+            width: 200px;
+            height: 50px;
+            color: aqua ;
+            background-color: blue;
+            border-radius: 25px;
+        }
+        
+        div#divgendert{
+            background-color:  chocolate;
+            margin-top: 10px;
+        }
+        div#date{
+            margin-top: 10px;
+            background-color:  chocolate;
+        }
+        div#cit{
+            margin-top: 10px;
+            background-color:  chocolate;
+        }
+        div#lang{
+            
+            margin-top: 10px;
+            background-color:  chocolate;
+            text-align: center;
+            
+        }
+        div#tm{
+            margin-top: 10px;
+            background-color:  chocolate;
+            text-align: center;
+            display: grid;
+            place-items: center ;
+        }
+    
+    </style>
+    <script></script>
+</head>
+<body>
+
+    <form action="" method="get" enctype="multipart/form-data">
+
+        <fieldset>
+    <legend><b><strong><i>user personal information</i></strong></b></legend>
+    <hr>
+    <div id="divname">
+        <label for="name"><strong>Enter your full name :</strong></label>
+        
+        <input  type="text" id="name" name="name" placeholder="Your name" required autofocus title="name" minlength="full" >
+    </div>
+    <hr>
+    <div id="divmail">
+        <label for="mail"><strong>Enter your email :</strong></label>
+        
+        <input title="email" type="text" id="mail" name="mail" placeholder="Your email" aria-placeholder="example@email.com" required  >
+    </div>
+    <hr>
+    
+    <div id="divpass">
+        <label for="pass"><strong>Enter your Password :</strong> <img src="" alt=""></label>
+        
+        <input  title="password" type="password" name="pass" id="pass" placeholder="your Password" minlength="8" required >
+    </div>
+    <hr>
+    <div id="divconpass">
+        <label for="conpass"><strong>confirm your Password :</strong></label>
+        
+        <input  title="confirm password" type="password" name="conpass" id="conpass" placeholder="confirm your Password"  minlength="8"  required >
+    </div>
+    <hr> 
+    <div id="divgendert">
+        <label><strong>Gender :</strong></label>
+        <br>
+        <input type="radio" id="male[]" name="gend" title="male" checked > <label id="gendert" for="male[]">male</label>
+        <input type="radio" id="female[]" name="gend" title="female" > <label id="gendert" for="female[]">female</label>
+
+    </div>
+
+    <div id="date">
+        <label for="date"><strong>Enter your Date of Birth :</strong></label>
+        
+        <input type="date" name="date" id="date" >
+    </div>
+    <div id="cit">
+        <label for="city"><strong>Choose your city :</strong></label>
+        <br>
+        <input list="city" name="city">
+        <datalist id="city">
+            <option value = "Gaza">
+            <option value = "khan yonis">
+            <option value="rafah" selected >
+            <option value="al nusirat">
+            <option value="bait lahia">
+        </datalist>
+        
+    </div>
+    <div id="lang">
+        <label for=""><strong>Check your favorites languages :</strong></label>
+        <br>
+        <input type="checkbox" name="check" id="html"><label for="html">Html</label><br>
+        <input type="checkbox" name="check" id=""><label for="css">Css</label><br>
+        <input type="checkbox" name="check" id="js"><label for="js">Js</label><br>
+        <input type="checkbox" name="check" id="php"><label for="php">Php</label><br>
+    </div >
+    <div id="tm">
+        <label for="team">select your team :</label>
+    <input list="team"  name="chose ">
+    <datalist id="team" >
+        <option value="barca">
+        <option value="realm">
+        <option value="liver">
+        <option value="manchester">
+    </datalist>
+    </div>
+    <div>
+        <label for="">add file</label>
+        
+        <input type="file" name="img"   id="img" >
+    </div>
+    <div>
+        <button type="reset"><strong>refresh</strong></button><br><br>
+        <button type="submit"><strong>submit</strong></button>
+    </div>    
+    </fieldset>
+    </form>
+
+</body>
+</html>
